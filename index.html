@@ -1,0 +1,28 @@
+  <main id="container">
+    <div id="main">
+       <video id="video" playsinline autoplay muted></video>
+       <video id="recorded" playsinline ></video>
+       <br>
+   
+       <section>
+         <button id="start">Request camera</button>
+         <button id="record" >Record</button>
+         <!-- <button id="stop" >Stop</button>  -->
+         <button id="play" onclick="playbtn()" >Play</button>
+       </section>
+      </main>
+  <button onclick="shoot()" style="width: 64px;border: solid 2px #ccc;">Capture</button><br/>
+  <div id="output"></div>
+</div>
+ <script src="./index.js"></script>
+ <script>
+  function playbtn() {
+    var x = document.getElementById("video");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  </script>
